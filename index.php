@@ -569,7 +569,7 @@
             <div class="block-blog text-left">
               <a href="#"><img src="assets/img/blog/blog-image-3.jpg" class="img-responsive" alt="img"></a>
               <div class="content-blog">
-                <h4><a href="#">whats isthe difference between good and bat typography</a></h4>
+                <h4><a href="#">whats is the difference between good and bat typography</a></h4>
                 <span>05, juin 2017</span>
                 <a class="float-end readmore" href="#">read more</a>
               </div>
@@ -661,7 +661,6 @@
                   <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                 </div>
                 <div class="my-3">
-                  <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>

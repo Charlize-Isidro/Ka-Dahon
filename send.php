@@ -12,7 +12,7 @@ if(isset($_POST["send"])){
     //POST
     $sender = $_POST['email'];
     $name = $_POST['name'];
-    $subject = $_POST['subject'];
+    $subject = 'Ka-Dahon | Feedback ' .  $_POST['subject'];
     $message = $_POST['message'];
 
     //PHP Mailer Declaration
@@ -20,14 +20,14 @@ if(isset($_POST["send"])){
 
     $mail->isSMTP();
     $mail->Host = 'smtp.hostinger.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'contact@ka-dahon.shop';
+    $mail->SMTPAuth = 'true';
+    $mail->Username = 'inquiry@ka-dahon.shop';
     $mail->Password = 'Charlize@15'; //Gmail App Password
     $mail->SMTPSecure = 'tls';
     $mail->Port = '587';
 
     //SETTING Email
-    $mail->setFrom('contact@ka-dahon.shop', 'Ka-Dahon'); //Senders Email
+    $mail->setFrom('inquiry@ka-dahon.shop', 'Ka-Dahon'); //Senders Email
     $mail->addAddress($sender); //Receivers Email
     $mail->isHTML(true);
     $mail->Subject = "Greeting!";
